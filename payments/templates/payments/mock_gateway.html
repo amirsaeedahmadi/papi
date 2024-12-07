@@ -1,0 +1,15 @@
+{% extends "payments/base.html" %}
+
+{% block title %}
+Darvag Cloud Test Mock Internet Payment Gateway
+{% endblock title %}
+{% block content %}
+<div>
+  This is a mocked bank gateway
+</div>
+<div>Amount</div>
+<div>{{request.GET.amount}}</div>
+<a href="{% url 'gateway-deposit-callback' %}?token={{request.GET.token}}">
+  Pay
+</a>
+{% endblock content %}

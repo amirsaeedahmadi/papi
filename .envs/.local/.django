@@ -1,0 +1,31 @@
+# DO NOT CHANGE THIS FILE.
+
+# General
+# ------------------------------------------------------------------------------
+USE_DOCKER=yes
+IPYTHONDIR=/app/.ipython
+DJANGO_DEBUG=True
+DJANGO_SECRET_KEY=7lBK1fnKyVujMl61KffB653mCVsqKK47aFLuUk4rRbFl5JxXaEMGNX27xPrJBdtL
+DJANGO_ALLOWED_HOSTS=api.darvag.dev,api.admin.darvag.dev
+DJANGO_ADMIN_ALLOWED_HOSTS=api.admin.darvag.dev
+CORS_ALLOWED_ORIGINS=https://darvag.dev,https://admin.darvag.dev
+CSRF_TRUSTED_ORIGINS=https://api.darvag.dev,https://api.admin.darvag.dev
+
+# Redis
+# ------------------------------------------------------------------------------
+REDIS_URL=redis://redis:6379/0
+
+# Kafka
+# ------------------------------------------------------------------------------
+KAFKA_URL=kafka1:9092
+
+# Celery
+# ------------------------------------------------------------------------------
+
+# Flower
+CELERY_FLOWER_USER=debug
+CELERY_FLOWER_PASSWORD=debug
+
+# Gateways
+MOCK_PAYMENTS=True
+NOVINPAY_CORPORATION_PIN=darva@000
